@@ -134,3 +134,14 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 // Forward-declare this helper function since it is defined in rgb_matrix.c.
 void rgb_matrix_update_pwm_buffers(void);
 #endif
+
+
+// #include "print.h"
+
+void keyboard_post_init_user(void) {
+    debug_enable=true;
+    debug_matrix=true;
+    debug_keyboard=true;
+    debug_mouse=true;
+    uprintf("charybdis debug start\n");
+}
