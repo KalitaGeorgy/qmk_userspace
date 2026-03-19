@@ -3,7 +3,7 @@
     "build_targets": [
         [
             "bastardkb/charybdis/3x6",
-            "debug"
+            "custom_sensor"
         ]
     ]
 }
